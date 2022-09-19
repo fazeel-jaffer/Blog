@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>My Blog</title>
+
+    <!-- Bootstrap -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <div class="col-xs-3">
+                        <img src="img/logo.png" alt="Logo" width="30px">
+                    </div>
+                    <div class="col-xs-9">
+                        My Blog
+                    </div>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html"><i class="fa fa-house-user"></i> Home</a></li>
+                    <!-- <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false"><i class="fa-solid fa-file"></i> Pages <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                        </ul>
+                    </li> -->
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false"><i class="fa-solid fa-list-ul"></i> Category <span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Category 1</a></li>
+                            <li><a href="#">Category 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contactus.html"><i class="fa-solid fa-phone"></i> Contact Us</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="jumbotron">
+        <div class="container">
+            <div id="details" class=" animate__animated  animate__fadeInLeft">
+                <h1>My_123<span>Blog</span></h1>
+                <p>Shine with us</p>
+            </div>
+        </div>
+        <img src="/img/top-image.jpg" alt="Top image">
+    </div>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="img/slider-img1.jpg" alt="Slider1">
+                                <div class="carousel-caption">
+                                    This is Heading for slider 1
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/slider-img2.jpg" alt="Slider2">
+                                <div class="carousel-caption">
+                                    This is Heading for slider 2
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/slider-img3.jpg" alt="Slider3">
+                                <div class="carousel-caption">
+                                    This is Heading for slider 3
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button"
+                            data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button"
+                            data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div class="post">
+                        <div class="row">
+                            <div class="col-md-2 post-date">
+                                <div class="day">13</div>
+                                <div class="month">August</div>
+                                <div class="year">2022</div>
+                            </div>
+                            <div class="col-md-8 post-title">
+                                <a href="#">
+                                    <h2>This is Demo Heading for post 1....</h2>
+                                </a>
+                                <p>Written By <span>Fazeel Jaffer</span></p>
+                            </div>
+                            <div class="col-md-2 profile-picture">
+                                <img src="img/profile-black.jpg" class="img-circle" alt="Profile Pictre">
+                            </div>
+                        </div>
+                        <a href="#"><img src="img/slider-img1.jpg" alt="Post image"></a>
+                        <p class="desc">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, fuga quam. Cupiditate
+                            quidem consectetur sequi quia perspiciatis consequuntur aspernatur maxime, blanditiis
+                            asperiores dignissimos at recusandae repellat veniam repellendus quam voluptas quae? Sunt
+                            architecto necessitatibus quo vero et tempore adipisci a cum soluta ratione. Id, nam nihil,
+                            nostrum quod necessitatibus quasi quos, nemo voluptatibus maiores asperiores vero
+                            exercitationem quibusdam quia saepe omnis perspiciatis! Provident, quo neque aperiam
+                            praesentium dolore quasi aliquid nobis consequuntur eius eveniet? Repellat excepturi dicta
+                            quidem distinctio libero enim explicabo pariatur officiis, vitae magnam, delectus veritatis,
+                            assumenda id sequi architecto temporibus et quaerat? Vel repellat ducimus nam incidunt
+                            eligendi unde id sapiente temporibus iure ea ratione fugiat, dolorem suscipit modi aliquam
+                        </p>
+                        <a href="#" class="btn btn-primary">Read More...</a>
+                        <div class="bottom">
+                            <span class="first">
+                                <i class="fa-solid fa-folder"></i> <a href="#">Category</a>
+                            </span> |
+                            <span class="second">
+                                <i class="fa-solid fa-comment"></i> <a href="#">Comment</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="row">
+                            <div class="col-md-2 post-date">
+                                <div class="day">13</div>
+                                <div class="month">August</div>
+                                <div class="year">2022</div>
+                            </div>
+                            <div class="col-md-8 post-title">
+                                <a href="#">
+                                    <h2>This is Demo Heading for post 1....</h2>
+                                </a>
+                                <p>Written By <span>Fazeel Jaffer</span></p>
+                            </div>
+                            <div class="col-md-2 profile-picture">
+                                <img src="img/profile-black.jpg" class="img-circle" alt="Profile Pictre">
+                            </div>
+                        </div>
+                        <a href="#"><img src="img/slider-img1.jpg" alt="Post image"></a>
+                        <p class="desc">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, fuga quam. Cupiditate
+                            quidem consectetur sequi quia perspiciatis consequuntur aspernatur maxime, blanditiis
+                            asperiores dignissimos at recusandae repellat veniam repellendus quam voluptas quae? Sunt
+                            architecto necessitatibus quo vero et tempore adipisci a cum soluta ratione. Id, nam nihil,
+                            nostrum quod necessitatibus quasi quos, nemo voluptatibus maiores asperiores vero
+                            exercitationem quibusdam quia saepe omnis perspiciatis! Provident, quo neque aperiam
+                            praesentium dolore quasi aliquid nobis consequuntur eius eveniet? Repellat excepturi dicta
+                            quidem distinctio libero enim explicabo pariatur officiis, vitae magnam, delectus veritatis,
+                            assumenda id sequi architecto temporibus et quaerat? Vel repellat ducimus nam incidunt
+                            eligendi unde id sapiente temporibus iure ea ratione fugiat, dolorem suscipit modi aliquam
+                        </p>
+                        <a href="#" class="btn btn-primary">Read More...</a>
+                        <div class="bottom">
+                            <span class="first">
+                                <i class="fa-solid fa-folder"></i> <a href="#">Category</a>
+                            </span> |
+                            <span class="second">
+                                <i class="fa-solid fa-comment"></i> <a href="#">Comment</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="row">
+                            <div class="col-md-2 post-date">
+                                <div class="day">13</div>
+                                <div class="month">August</div>
+                                <div class="year">2022</div>
+                            </div>
+                            <div class="col-md-8 post-title">
+                                <a href="#">
+                                    <h2>This is Demo Heading for post 1....</h2>
+                                </a>
+                                <p>Written By <span>Fazeel Jaffer</span></p>
+                            </div>
+                            <div class="col-md-2 profile-picture">
+                                <img src="img/profile-black.jpg" class="img-circle" alt="Profile Pictre">
+                            </div>
+                        </div>
+                        <a href="#"><img src="img/slider-img1.jpg" alt="Post image"></a>
+                        <p class="desc">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, fuga quam. Cupiditate
+                            quidem consectetur sequi quia perspiciatis consequuntur aspernatur maxime, blanditiis
+                            asperiores dignissimos at recusandae repellat veniam repellendus quam voluptas quae? Sunt
+                            architecto necessitatibus quo vero et tempore adipisci a cum soluta ratione. Id, nam nihil,
+                            nostrum quod necessitatibus quasi quos, nemo voluptatibus maiores asperiores vero
+                            exercitationem quibusdam quia saepe omnis perspiciatis! Provident, quo neque aperiam
+                            praesentium dolore quasi aliquid nobis consequuntur eius eveniet? Repellat excepturi dicta
+                            quidem distinctio libero enim explicabo pariatur officiis, vitae magnam, delectus veritatis,
+                            assumenda id sequi architecto temporibus et quaerat? Vel repellat ducimus nam incidunt
+                            eligendi unde id sapiente temporibus iure ea ratione fugiat, dolorem suscipit modi aliquam
+                        </p>
+                        <a href="#" class="btn btn-primary">Read More...</a>
+                        <div class="bottom">
+                            <span class="first">
+                                <i class="fa-solid fa-folder"></i> <a href="#">Category</a>
+                            </span> |
+                            <span class="second">
+                                <i class="fa-solid fa-comment"></i> <a href="#">Comment</a>
+                            </span>
+                        </div>
+                    </div>
+                    <nav aria-label="Page navigation" id="pagination">
+                        <ul class="pagination">
+                          <li>
+                            <a href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                            </a>
+                          </li>
+                          <li class="active"><a href="#">1</a></li>
+                          <li><a href="#">2</a></li>
+                          <li><a href="#">3</a></li>
+                          <li><a href="#">4</a></li>
+                          <li><a href="#">5</a></li>
+                          <li>
+                            <a href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
+                <div class="col-md-4">
+                    <div class="widgets">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">Go!</button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="widgets">
+                        <div class="popular">
+                            <h4>Popular Posts</h4>
+                            <hr>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <a href="#"><img src="img/slider-img1.jpg" alt="Image 1"></a>
+                                </div>
+                                <div class="col-xs-8 details">
+                                </div>
+                                <a href="#">
+                                    <h4>This is Heading for Post</h4>
+                                </a>
+                                <p><i class="fa-solid fa-clock"></i> 10 August 2022</p>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <a href="#"><img src="img/slider-img1.jpg" alt="Image 1"></a>
+                                </div>
+                                <div class="col-xs-8 details">
+                                </div>
+                                <a href="#">
+                                    <h4>This is Heading for Post</h4>
+                                </a>
+                                <p><i class="fa-solid fa-clock"></i> 10 August 2022</p>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <a href="#"><img src="img/slider-img1.jpg" alt="Image 1"></a>
+                                </div>
+                                <div class="col-xs-8 details">
+                                </div>
+                                <a href="#">
+                                    <h4>This is Heading for Post</h4>
+                                </a>
+                                <p><i class="fa-solid fa-clock"></i> 10 August 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widgets">
+                        <div class="popular">
+                            <h4>Recent Posts</h4>
+                            <hr>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <a href="#"><img src="img/slider-img1.jpg" alt="Image 1"></a>
+                                </div>
+                                <div class="col-xs-8 details">
+                                </div>
+                                <a href="#">
+                                    <h4>This is Heading for Post</h4>
+                                </a>
+                                <p><i class="fa-solid fa-clock"></i> 10 August 2022</p>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <a href="#"><img src="img/slider-img1.jpg" alt="Image 1"></a>
+                                </div>
+                                <div class="col-xs-8 details">
+                                </div>
+                                <a href="#">
+                                    <h4>This is Heading for Post</h4>
+                                </a>
+                                <p><i class="fa-solid fa-clock"></i> 10 August 2022</p>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <a href="#"><img src="img/slider-img1.jpg" alt="Image 1"></a>
+                                </div>
+                                <div class="col-xs-8 details">
+                                </div>
+                                <a href="#">
+                                    <h4>This is Heading for Post</h4>
+                                </a>
+                                <p><i class="fa-solid fa-clock"></i> 10 August 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widgets">
+                        <div class="popular">
+                            <h4>Categories</h4>
+                            <hr>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <ul>
+                                        <li><a href="">category</a></li>
+                                        <li><a href="">category</a></li>
+                                        <li><a href="">category</a></li>
+                                        <li><a href="">category</a></li>
+                                        <li><a href="">category</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-6">
+                                    <ul>
+                                        <li><a href="">category</a></li>
+                                        <li><a href="">category</a></li>
+                                        <li><a href="">category</a></li>
+                                        <li><a href="">category</a></li>
+                                        <li><a href="">category</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widgets">
+                        <div class="categories">
+                            <h4>Social Icons</h4>
+                            <hr>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <a href="#">
+                                        <img src="img/facebook.png" alt="Facebook">
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="#">
+                                        <img src="img/twitter.png" alt="Twitter">
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="#">
+                                        <img src="img/googleplus.png" alt="GooglePlus">
+                                    </a>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <a href="#">
+                                        <img src="img/linkedin.png" alt="Linkedin">
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="#">
+                                        <img src="img/skype.png" alt="Skype">
+                                    </a>
+                                </div>
+                                <div class="col-xs-4">
+                                    <a href="#">
+                                        <img src="img/youtube.gif" alt="Youtube">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <footer>
+            <div class="container">
+                Copyright &copy; by <a href="http://www.fazeel123.com">Fazeel Jaffer</a>.
+                All right Reserved from 2022-2024.
+            </div>
+        </footer>
+    </section>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
